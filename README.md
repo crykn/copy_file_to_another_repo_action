@@ -32,6 +32,7 @@ This GitHub Action copies a folder from the current repository to a location in 
 * user_email: The GitHub user email associated with the API token secret.
 * user_name: The GitHub username associated with the API token secret.
 * destination_branch: [optional] The branch of the source repo to update, if not master.
+* destination_branch_create: [optional] A branch to be created with this commit, defaults to commiting in `destination_branch`
 * commit_msg: [optional] The commit message to use.
 
 # Behavior Notes

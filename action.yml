@@ -22,6 +22,9 @@ inputs:
   commit_msg:
     description: 'The commit message'
     required: false
+  destination_branch_create:
+    description: 'Destination branch to create for this commit'
+    required: false
 runs:
   using: 'docker'
   image: 'Dockerfile'
@@ -31,6 +34,7 @@ runs:
     - ${{ inputs.destination-folder }}
     - ${{ inputs.user-email }}
     - ${{ inputs.destination-branch }}
+    - ${{ inputs.destination-branch-create }}
     - ${{ inputs.commit_msg }}
 branding:
   icon: 'git-commit'
